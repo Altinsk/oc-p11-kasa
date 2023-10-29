@@ -23,7 +23,6 @@ root.render(
       <Route index element={<Home />} />
       <Route path="accueil" element={<Accueil />} />
       <Route path="apropos" element={<Apropos />} />
-      <Route path="*" element={<Invalid />} />
       </Route>
       <Route path="*" element={<Invalid />} />  
   </Routes>
