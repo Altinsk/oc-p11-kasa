@@ -1,14 +1,16 @@
 import React from "react";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
+import InvalidRoute from "../../components/InvalidRoute/InvalideRoute";
 
-const Home = () => {
+const Invalid = () => {
   return (
     <div>
       <Header />
+      <InvalidRoute />
       <Footer />
     </div>
   );
 };
 
-export default Home;
+export default Invalid;

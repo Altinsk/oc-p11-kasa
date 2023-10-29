@@ -1,8 +1,7 @@
 import React from "react";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
-
-const Home = () => {
+const Apropos = () => {
   return (
     <div>
       <Header />
@@ -11,4 +10,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Apropos;
