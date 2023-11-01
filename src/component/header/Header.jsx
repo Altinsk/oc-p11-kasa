@@ -1,13 +1,13 @@
 import React from "react";
-import logo from "../../assests/logo.png";
-import "./home.css";
+import logo from "../../assets/logo.png";
+import "../header/Header.css";
 import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
 const linkArray = [
-  { title: "Accueil", route: "accueil" },
-  { title: "Apropos", route: "apropos" },
+  { title: "Accueil", route: "/" },
+  { title: "A Propos", route: "About" },
 ];
 
 const Header = () => {

@@ -1,0 +1,15 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 60px;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  .links .link {
+    margin-right: 40px;
+    text-decoration: none;
+    color: #e86a6a;
+  }

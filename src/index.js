@@ -7,16 +7,22 @@ import {
   Route,
   Routes
 } from "react-router-dom";
-import App from "./App";
-
+import MainLayout from "../src/MainLayout";
+import Home from "./page/home/Home";
+import About from "./page/about/About";
+import InvalidRoute from "./component/invalidroute/InvalidRoute";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   // <React.StrictMode>
     <MainRouter>
       <Routes>
-        <Route path="/*" element={<App />} />
-      </Routes>
+          <Route path="/" element={<MainLayout />}>
+            <Route index element={<Home />} />
+            <Route path="About" element={<About />} />
+            <Route path="*" element={<InvalidRoute />} />
+          </Route>     
+        </Routes>
     </MainRouter>
   // </React.StrictMode>
 );

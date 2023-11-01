@@ -1,0 +1,23 @@
+.flex-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: 10px 50px;
+  }
+  
+  .flex-item {
+    padding: 20px;
+  }
+
+  .grid-img {
+    border-radius: 10px;
+  }
+  
+  .text {
+    color: white;
+    font-size: 60px;
+    padding-top: 30px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    margin-top: -230px;
+  }

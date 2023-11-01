@@ -1,12 +1,13 @@
 import React from "react";
 import cardArray from "../../constant/data.json";
 import { useNavigate } from "react-router";
+import "../thumblist/ThumbList.css"
 
 const ThumbList = () => {
   const navigate = useNavigate();
 
   const handleClick = (iterator) => {
-    navigate("apropos/" + iterator?.id);
+    navigate("About/" + iterator?.id);
   };
 
   return (

@@ -1,6 +1,6 @@
 import React from "react";
-import ThumbList from "./ThumbList";
-import ImageBackground from "../../component/ImageBackground"
+import ThumbList from "../../component/thumblist/ThumbList";
+import ImageBackground from "../../component/imagebackground/ImageBackground"
 
 const Home = () => {
   return (
