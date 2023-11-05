@@ -3,7 +3,7 @@ import logoWhite from "../../assets/logoWhite.png";
 
 const Footer = () => {
   return (
-    <div className="footer" style={{ backgroundColor: "black", paddingTop: 50, marginTop: 50 }}>
+    <div style={{ backgroundColor: "black", paddingTop: 50, marginTop: 50 }}>
       <div style={{ textAlign: "center" }}>
         <img src={logoWhite} alt="logoWhite" className="image1" width={100} />
       </div>

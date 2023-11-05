@@ -1,10 +1,9 @@
 import React from "react";
-import backImg from "../../assets/backImg.png"
 import "../imagebackground/ImageBackground.css"
 
 const ImageBackground = ({
-  imgSrc = backImg,
-  content,
+  imgSrc,
+  content
   }) => {
   return (
     <>
