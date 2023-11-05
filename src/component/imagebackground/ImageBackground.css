@@ -4,10 +4,42 @@
     border-radius: 30px;
   }
   
-  .image-container {
-    padding: 20px 70px;
-    border-radius: 10px;
-    overflow: hidden;
-    background-size: auto;
-    position: relative;
-  }
+.image-container {
+  padding: 20px 70px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-size: auto;
+  position: relative;
+}
+
+.centerLeft {
+  position: absolute;
+  top: 50%;
+  left: 7%;
+  transform: translate(-50%, -50%);
+  font-size: 75px;
+
+}
+
+.centerRight {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translate(-50%, -50%);
+  font-size: 75px;
+
+}
+
+
+.container-center {
+  height: 500px;
+  position: relative;
+}
+
+.container-center-item {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

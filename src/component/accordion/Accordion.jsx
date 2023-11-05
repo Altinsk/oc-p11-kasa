@@ -3,7 +3,7 @@ import { HiChevronUp, HiChevronDown } from "react-icons/hi";
 import "../accordion/Accordion.css"
 
 const Accordion = ({data, handleClick}) => {
-    const {id, title, content, equipment, visible } = {...data};
+    const {id, title, content, equipments, visible } = {...data};
   return (
     <>
       <button className="accordion" onClick={ () => handleClick(id)}>
@@ -19,7 +19,7 @@ const Accordion = ({data, handleClick}) => {
       </button>
       {visible && (
           <div className="panel">
-          {equipment?.map((equip, index) => <p key={index}>{equip}</p>) || (<p>{content}</p>)}
+          {equipments?.map((equip, index) => <p key={index}>{equip}</p>) || (<p>{content}</p>)}
           </div>
       )}
     </>

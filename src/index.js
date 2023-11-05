@@ -10,6 +10,7 @@ import {
 import MainLayout from "../src/MainLayout";
 import Home from "./page/home/Home";
 import About from "./page/about/About";
+import Location from "./page/location/Location";
 import InvalidRoute from "./component/invalidroute/InvalidRoute";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -20,6 +21,8 @@ root.render(
           <Route path="/" element={<MainLayout />}>
             <Route index element={<Home />} />
             <Route path="About" element={<About />} />
+            <Route path="About/:id" element={<Location />} />
+
             <Route path="*" element={<InvalidRoute />} />
           </Route>     
         </Routes>

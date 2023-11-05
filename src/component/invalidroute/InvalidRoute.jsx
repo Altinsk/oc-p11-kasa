@@ -3,14 +3,14 @@ import "../invalidroute/InvalidRoute.css"
 
 const InvalidRoute = () => {
   return (
-      <div className="container-center">
-        <div className="container-center-item">
+      <div className="invalid-container-center">
+        <div >
           <h1 className="errorText">404</h1>
         </div>
-        <div className="container-center-item">
+        <div >
           <p className='errorDescription'>Oups! La page que vous demandez n'existe pas.</p>
         </div>
-        <div className="container-center-item">
+        <div>
           <a href='/' className="returnButton">Retourner sur la page d’accueil</a>
         </div>
       </div>

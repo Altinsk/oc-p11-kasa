@@ -10,7 +10,7 @@
   text-align: center;
 } 
 
-.container-center {
+.invalid-container-center {
   display: flex;
   flex-direction: column;
   justify-content: center;
