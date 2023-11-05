@@ -2,36 +2,37 @@
     font-size: 160px;
     color: #e86a6a;
     text-align: center;
-    margin-top: -10px;
+    /*margin-top: -10px;*/
   }
 
   .errorDescription {
     font-size: 30px;
     color: #e86a6a;
     text-align: center;
-    margin-bottom: -80px;
+    /*margin-bottom: -80px;*/
   } 
   
-  .container-center {
+ .container-center {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+  
   }
   
-  .container-center-item {
+   /*.container-center-item {
     margin: 0;
-    position: absolute;
+   position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
+  }*/
   
   .returnButton {
     text-decoration: underline;
     color: #e86a6a;
-    margin: 0;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  }
+
+  .footer {
+    
   }

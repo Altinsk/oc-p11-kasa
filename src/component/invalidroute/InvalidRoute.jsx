@@ -10,8 +10,8 @@ const InvalidRoute = () => {
         <div className="container-center-item">
           <p className='errorDescription'>Oups! La page que vous demandez n'existe pas.</p>
         </div>
-        <div>
-          <a href='/accueil' className="returnButton">Retourner sur la page d’accueil</a>
+        <div className="container-center-item">
+          <a href='/' className="returnButton">Retourner sur la page d’accueil</a>
         </div>
       </div>
   );

@@ -21,36 +21,32 @@ const Header = () => {
   const handleLinkClick = (event, iterator) => navigate(iterator.route);
 
   return (
-    <>
-      <div>
-        <div className="navbar">
-          <div className="logo">
-            <img
-              src={logo}
-              alt="logo"
-              className="image1"
-              onClick={(event) => {handleLinkClick(event, { route: "/" }); handleStyle(null)}}
-            />
-          </div>
-          <div className="links">
-            {linkArray.map((iterator, index) => (
-              <Link
-                key={index}
-                to={iterator.route}
-                className="link"
-                onClick={(event) =>  {handleLinkClick(event, iterator); handleStyle(index)}}
-                style = {{textDecoration: activeLink === index ? "underline" : null}}
-              >
-                {iterator.title}
-              </Link>
-            ))}
-          </div>
+    <div>
+      <div className="navbar">
+        <div className="logo">
+          <img
+            src={logo}
+            alt="logo"
+            className="image1"
+            onClick={(event) => {handleLinkClick(event, { route: "/" }); handleStyle(null)}}
+          />
+        </div>
+        <div className="links">
+          {linkArray.map((iterator, index) => (
+            <Link
+              key={index}
+              to={iterator.route}
+              className="link"
+              onClick={(event) =>  {handleLinkClick(event, iterator); handleStyle(index)}}
+              style = {{textDecoration: activeLink === index ? "underline" : null}}
+            >
+              {iterator.title}
+            </Link>
+          ))}
         </div>
       </div>
-    </>
+    </div>
   );
-   
-
 };
 
 export default Header;
