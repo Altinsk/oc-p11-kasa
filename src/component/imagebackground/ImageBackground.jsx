@@ -2,7 +2,6 @@ import React from "react";
 import "../imagebackground/ImageBackground.css"
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
-
 const ImageBackground = ({
   imgSrc,
   content,
@@ -25,6 +24,7 @@ const ImageBackground = ({
           <AiOutlineRight color="white" onClick={handleRight} />
         </div>
       )}
+
     </div>
 
     {content && (

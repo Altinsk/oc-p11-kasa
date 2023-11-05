@@ -64,8 +64,11 @@ const Location = () => {
         handleLeft={handleLeftClick}
         handleRight={handleRightClick}
       />
-
-      <div className="grid-container">
+      <div>
+        <p>{picIndex +1 }/{pictures.length}</p>
+      </div>
+      
+       <div className="grid-container">
         <div className="mainItemLeft">
           <h4
             style={{
@@ -80,14 +83,12 @@ const Location = () => {
           <p style={{ color: "#e86a6a", fontSize: "20px", margin: "0px" }}>
             {location}
           </p>
-
           <ul>
             {tags.map((tag, index) => (
               <li key={index}>{tag} </li>
             ))}
           </ul>
         </div>
-
         <div className="mainItemRight">
           <div className="text3">
             {[
