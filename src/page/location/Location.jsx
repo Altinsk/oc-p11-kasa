@@ -55,6 +55,13 @@ const Location = () => {
     else setPicIndex((prevState) => prevState + 1);
   };
 
+  const picCounter = () => {
+    let pictureNumber = picIndex + 1;
+    let totalPictures = pictures.length;
+    let counter = toString(pictureNumber) / toString(totalPictures);
+    return counter;
+  }
+
   if (!iterator) return <>No data</>;
 
   return (
@@ -63,6 +70,7 @@ const Location = () => {
         imgSrc={pictures[picIndex]}
         handleLeft={handleLeftClick}
         handleRight={handleRightClick}
+        picCounter = {picCounter}
       />
       <div>
         <p>{picIndex +1 }/{pictures.length}</p>

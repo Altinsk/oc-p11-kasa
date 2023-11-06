@@ -6,7 +6,8 @@ const ImageBackground = ({
   imgSrc,
   content,
   handleLeft,
-  handleRight
+  handleRight, 
+  picCounter
   }) => {
   return (
     <>
@@ -31,6 +32,12 @@ const ImageBackground = ({
       <div className="text">
         <div>{content}</div>
       </div>
+    )}
+
+    {picCounter && (
+    <div className="pic-counter">
+        <p>{picCounter}</p>
+    </div>
     )}
   </>
   );
