@@ -20,7 +20,7 @@ const Location = () => {
     pictures,
   } = { ...iterator };
   const [picIndex, setPicIndex] = useState(0);
-  const [accordionArray, setAccordionArray] = useState([
+    const [accordionArray, setAccordionArray] = useState([
     {
       id: 1,
       title: "Description",
@@ -55,26 +55,30 @@ const Location = () => {
     else setPicIndex((prevState) => prevState + 1);
   };
 
-  const picCounter = () => {
-    let pictureNumber = picIndex + 1;
-    let totalPictures = pictures.length;
-    let counter = toString(pictureNumber) / toString(totalPictures);
+  /*const pictureCounter = () => {
+    const pictureNumber = picIndex + 1;
+    const totalPictures = pictures.length;
+    const counter = toString(pictureNumber) / toString(totalPictures);
     return counter;
-  }
+  }*/
+
+  const [pictureNumber, setPictureNumber] = useState(1);
+
+  const pictureCounter = () => {
+       setPictureNumber(pictureNumber + 1);
+  };
 
   if (!iterator) return <>No data</>;
-
+  
   return (
     <>
       <ImageBackground
         imgSrc={pictures[picIndex]}
         handleLeft={handleLeftClick}
         handleRight={handleRightClick}
-        picCounter = {picCounter}
+        picCounter = {pictureCounter}
       />
-      <div>
-        <p>{picIndex +1 }/{pictures.length}</p>
-      </div>
+
       
        <div className="grid-container">
         <div className="mainItemLeft">

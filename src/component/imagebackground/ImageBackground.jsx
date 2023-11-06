@@ -19,6 +19,12 @@ const ImageBackground = ({
       )}
 
       <img src={imgSrc} alt="Description" className="img-bg" />
+      
+      {picCounter && (
+        <div className="pic-counter">
+            <p>{picCounter}</p>
+        </div>
+        )}
 
       {handleRight && (
         <div className="centerRight">
@@ -34,11 +40,7 @@ const ImageBackground = ({
       </div>
     )}
 
-    {picCounter && (
-    <div className="pic-counter">
-        <p>{picCounter}</p>
-    </div>
-    )}
+
   </>
   );
 };
