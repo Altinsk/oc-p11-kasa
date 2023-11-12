@@ -11,9 +11,9 @@ const Accordion = ({data, handleClick}) => {
 
           <div style={{textAlign: "right", marginTop: -15}}>
               {visible ? (
-                  <HiChevronUp color="white" />
+                  <HiChevronDown color="white" fontSize={"40"}/>
               ) : (
-                  <HiChevronDown color="white" />
+                  <HiChevronUp color="white" fontSize={"40"}/>
               )}
           </div>
       </button>
