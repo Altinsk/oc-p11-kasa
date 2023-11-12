@@ -9,7 +9,7 @@ const Accordion = ({data, handleClick}) => {
       <button className="accordion" onClick={ () => handleClick(id)}>
           <div>{title}</div>
 
-          <div style={{textAlign: "right", marginTop: -15}}>
+          <div>
               {visible ? (
                   <HiChevronDown color="white" fontSize={"40"}/>
               ) : (
