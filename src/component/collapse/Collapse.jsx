@@ -1,12 +1,12 @@
 import React from "react";
 import { HiChevronUp, HiChevronDown } from "react-icons/hi";
-import "../accordion/Accordion.css"
+import "../../component/collapse/Collapse.css"
 
-const Accordion = ({data, handleClick}) => {
+const Collapse = ({data, handleClick}) => {
     const {id, title, content, equipments, visible } = {...data};
   return (
     <>
-      <button className="accordion" onClick={ () => handleClick(id)}>
+      <button className="collapse" onClick={ () => handleClick(id)}>
           <div>{title}</div>
 
           <div>
@@ -26,4 +26,5 @@ const Accordion = ({data, handleClick}) => {
   )
 }
 
-export default Accordion
+export default Collapse
+

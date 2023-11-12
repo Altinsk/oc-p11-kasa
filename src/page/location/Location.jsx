@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ImageBackground from "../../component/imagebackground/ImageBackground";
-import Accordion from "../../component/accordion/Accordion";
+import Collapse from "../../component/collapse/Collapse";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import { useParams } from "react-router";
 import cardArray from "../../constant/data.json";
@@ -20,7 +20,7 @@ const Location = () => {
     pictures,
   } = { ...iterator };
   const [picIndex, setPicIndex] = useState(0);
-    const [accordionArray, setAccordionArray] = useState([
+    const [collapseArray, setCollapseArray] = useState([
     {
       id: 1,
       title: "Description",
@@ -36,13 +36,13 @@ const Location = () => {
   ]);
 
   const handleClick = (id) => {
-    const modifiedArray = accordionArray.map((item) => {
+    const modifiedArray = collapseArray.map((item) => {
       if (item.id === id) {
         item.visible = !item.visible;
       }
       return item;
     });
-    setAccordionArray(modifiedArray);
+    setCollapseArray(modifiedArray);
   };
 
   const handleLeftClick = () => {
@@ -127,9 +127,9 @@ const Location = () => {
       </div>
 
       <div className="grid-container">
-        {accordionArray.map((iterator, index) => (
+        {collapseArray.map((iterator, index) => (
           <div key={index} className="grid-item-start">
-            <Accordion
+            <Collapse
               data={iterator}
               handleClick={() => handleClick(iterator?.id)}
             />

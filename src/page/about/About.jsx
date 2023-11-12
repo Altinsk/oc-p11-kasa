@@ -1,12 +1,12 @@
 import React from "react";
 import ImageBackground from "../../component/imagebackground/ImageBackground";
 import mountImg from "../../assets/mountain1.png"
-import Accordion from "../../component/accordion/Accordion";
+import Collapse from "../../component/collapse/Collapse";
 import { useState } from "react";
 import "../about/About.css"
 
 const About = () => {
-  const [accordionArray, setAccordionArray] = useState([
+  const [collapseArray, setCollapseArray] = useState([
     {
       id: 1,
       title: "Fiabilité",
@@ -38,14 +38,14 @@ const About = () => {
   ]);
 
   const handleClick = (id) => {
-    const modifiedArray = accordionArray.map((item) => {
+    const modifiedArray = collapseArray.map((item) => {
       if (item.id === id) {
         item.visible = !item.visible;
       }
       return item;
     });
 
-    setAccordionArray(modifiedArray);
+    setCollapseArray(modifiedArray);
   };
 
   return(
@@ -53,11 +53,11 @@ const About = () => {
     <ImageBackground imgSrc={mountImg} />
 
     <div className="container">
-      {accordionArray.map((iterator, index) => (
+      {collapseArray.map((iterator, index) => (
         <div key={index}>
           <br />
 
-          <Accordion data={iterator} handleClick={handleClick} />
+          <Collapse data={iterator} handleClick={handleClick} />
         </div>
       ))}
     </div>

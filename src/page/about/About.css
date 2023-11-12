@@ -1,5 +1,5 @@
 .active,
-.accordion:hover {
+.collapse :hover {
   background-color: #f39393;
 }
 
