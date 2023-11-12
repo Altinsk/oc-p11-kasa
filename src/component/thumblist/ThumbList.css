@@ -16,12 +16,16 @@
   padding: 20px;
 }
 
+.flex-item :hover {
+cursor: pointer;
+}
+
 .grid-img {
   border-radius: 10px;
 }
 
 .text {
-  color: rgb(182, 175, 175);
+  color: rgb(215, 213, 213);
   font-size: 60px;
   padding-top: 30px;
   width: 100%;
