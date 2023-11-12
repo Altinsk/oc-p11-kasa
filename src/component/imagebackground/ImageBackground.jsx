@@ -36,7 +36,7 @@ const ImageBackground = ({
 
     {content && (
       <div className="text">
-        <div>{content}</div>
+        <div className="text-content">{content}</div>
       </div>
     )}
 

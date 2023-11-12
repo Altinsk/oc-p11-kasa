@@ -19,7 +19,7 @@ const Accordion = ({data, handleClick}) => {
       </button>
       {visible && (
           <div className="panel">
-          {equipments?.map((equip, index) => <p key={index}>{equip}</p>) || (<p>{content}</p>)}
+          {equipments?.map((equip, index) => <p key={index}>{equip}</p>) || (<p className="panel-content">{content}</p>)}
           </div>
       )}
     </>

@@ -11,7 +11,7 @@ const ThumbList = () => {
   };
 
   return (
-    <div>
+    <div className="global-container">
       <div className="flex-container">
         {cardArray?.map((iterator, index) => (
           <div
@@ -28,7 +28,7 @@ const ThumbList = () => {
 
             <div style={{ marginTop: -60, padding: 5 }}>
               {iterator?.location?.split("-").map((name, i) => {
-                return <div key={i} style={{ color: "white"}}>{name}</div>;
+                return <div key={i} style={{ color: "#ffffff"}}>{name}</div>;
               })}
             </div>
           </div>

@@ -7,7 +7,7 @@ import backImg from "../../assets/backImg.png"
 const Home = () => {
   return (
       <div>
-        <ImageBackground  imgSrc = {backImg} content={"Chez vous, partous et ailleurs"} />
+        <ImageBackground  imgSrc = {backImg} content={"Chez vous, partout et ailleurs"} />
         <ThumbList />
       </div>
   );

@@ -29,7 +29,7 @@ const Location = () => {
     },
     {
       id: 2,
-      title: "Equipments",
+      title: "Equipements",
       equipments,
       visible: false,
     },
