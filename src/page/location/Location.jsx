@@ -3,7 +3,7 @@ import ImageBackground from "../../component/imagebackground/ImageBackground";
 import Collapse from "../../component/collapse/Collapse";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import { useParams } from "react-router";
-import cardArray from "../../constant/data.json";
+import cardArray from "../../data/data.json";
 import "../location/Location.css"
 
 const Location = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import cardArray from "../../constant/data.json";
+import cardArray from "../../data/data.json";
 import { useNavigate } from "react-router";
 import "../thumblist/ThumbList.css"
 
