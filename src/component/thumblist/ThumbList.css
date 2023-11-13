@@ -34,3 +34,21 @@ cursor: pointer;
   margin-top: -230px;
   text-shadow: 5px 5px 3040px #2a2828;
 }
+
+
+/*Media @Mobile screens */
+@media screen and (max-width: 500px) {
+  .global-container {
+    padding: 0;
+  }
+  .flex-container {
+    background-color: #ffffff;
+    margin-top: 50px;
+  }
+  .outLineStar {
+    height: 20px;
+  }
+  .flex-container {
+    padding: 0;
+  }
+}

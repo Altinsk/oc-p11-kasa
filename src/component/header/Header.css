@@ -13,3 +13,16 @@
     text-decoration: none;
     color: #e86a6a;
   }
+
+  /*Media @Mobile screens */
+  @media screen and (max-width: 500px) {
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px;
+    }
+    .links .link {
+      margin-right: 10px;
+    }
+  }

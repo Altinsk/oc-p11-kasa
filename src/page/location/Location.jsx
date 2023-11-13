@@ -102,24 +102,27 @@ const Location = () => {
           </ul>
         </div>
         <div className="mainItemRight">
-          <div className="text3">
-            {[
-              host?.name
-                ?.split(" ")
-                ?.map((name, index) => <div key={index}>{name}</div>),
-            ]}
-          </div>
-
-          <div className="border">
-            <div style={{ marginTop: "90px", marginLeft: "-110px" }}>
+          <div className="lable">
+            <div className="border"> 
+            </div>
+            <div className="text3">
+              {[
+                host?.name
+                  ?.split(" ")
+                  ?.map((name, index) => <div key={index}>{name}</div>),
+              ]}
+            </div>
+          </div>    
+          <div>
+            <div className="stars">
               {[1, 2, 3, 4, 5].map((item, index) => {
                 const tempRating = ~~rating;
                 if (tempRating < item) {
                   return (
-                    <AiOutlineStar key={index} size={35} color="#e86a6a" />
+                    <AiOutlineStar className="outLineStar"  key={index} size={35} color="#e86a6a" />
                   );
                 }
-                return <AiFillStar key={index} size={35} color="#e86a6a" />;
+                return <AiFillStar className="outLineStar" key={index} size={35} color="#e86a6a" />;
               })}
             </div>
           </div>
