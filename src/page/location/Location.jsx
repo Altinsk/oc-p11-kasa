@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ImageBackground from "../../component/Imagebackground/ImageBackground";
+import Carousel from "../../component/Carousel/Carousel";
 import Collapse from "../../component/Collapse/Collapse";
 import { AiFillStar } from "react-icons/ai";
 import { useParams } from "react-router";
@@ -25,7 +25,7 @@ const Location = () => {
       id: 1,
       title: "Description",
       content: description,
-      visible: true,
+      visible: false,
     },
     {
       id: 2,
@@ -72,7 +72,7 @@ const Location = () => {
   
   return (
     <>
-      <ImageBackground
+      <Carousel
         imgSrc={pictures[picIndex]}
         handleLeft={handleLeftClick}
         handleRight={handleRightClick}
@@ -97,7 +97,7 @@ const Location = () => {
           </p>
           <ul>
             {tags.map((tag, index) => (
-              <li key={index}>{tag} </li>
+              <li className="mainItemLeftList" key={index}>{tag} </li>
             ))}
           </ul>
         </div>

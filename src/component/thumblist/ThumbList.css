@@ -2,7 +2,6 @@
   padding: 0 70px;
 }
 
-
 .flex-container {
   margin-top: 150px;
   background-color: rgb(251, 248, 244);
@@ -46,7 +45,7 @@ cursor: pointer;
     margin-top: 50px;
   }
   .outLineStar {
-    height: 20px;
+    height: 30px;
   }
   .flex-container {
     padding: 0;
