@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ImageBackground from "../../component/imagebackground/ImageBackground";
 import Collapse from "../../component/collapse/Collapse";
-import { AiFillStar, AiOutlineStar } from "react-icons/ai";
+import { AiFillStar } from "react-icons/ai";
 import { useParams } from "react-router";
 import cardArray from "../../data/data.json";
 import "../location/Location.css"
@@ -119,7 +119,7 @@ const Location = () => {
                 const tempRating = ~~rating;
                 if (tempRating < item) {
                   return (
-                    <AiOutlineStar className="outLineStar"  key={index} size={35} color="#FF6060" />
+                    <AiFillStar className="outLineStar"  key={index} size={35} color="#E3E3E3" />
                   );
                 }
                 return <AiFillStar className="outLineStar" key={index} size={35} color="#FF6060" />;
