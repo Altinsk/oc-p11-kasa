@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import ImageBackground from "../../component/imagebackground/ImageBackground";
-import Collapse from "../../component/collapse/Collapse";
+import ImageBackground from "../../component/Imagebackground/ImageBackground";
+import Collapse from "../../component/Collapse/Collapse";
 import { AiFillStar } from "react-icons/ai";
 import { useParams } from "react-router";
 import cardArray from "../../data/data.json";
-import "../location/Location.css"
+import "./Location.css"
 
 const Location = () => {
   const { id } = useParams();

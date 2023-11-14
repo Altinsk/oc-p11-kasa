@@ -1,5 +1,5 @@
 import React from "react";
-import "../invalidroute/InvalidRoute.css"
+import "../Invalidroute/InvalidRoute.css"
 
 const InvalidRoute = () => {
   return (

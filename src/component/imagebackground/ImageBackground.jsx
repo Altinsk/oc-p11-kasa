@@ -1,5 +1,5 @@
 import React from "react";
-import "../imagebackground/ImageBackground.css"
+import "./ImageBackground.css"
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
 const ImageBackground = ({

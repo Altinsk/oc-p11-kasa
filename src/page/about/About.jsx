@@ -1,9 +1,9 @@
 import React from "react";
-import ImageBackground from "../../component/imagebackground/ImageBackground";
+import ImageBackground from "../../component/Imagebackground/ImageBackground";
 import mountImg from "../../assets/mountain1.png"
-import Collapse from "../../component/collapse/Collapse";
+import Collapse from "../../component/Collapse/Collapse";
 import { useState } from "react";
-import "../about/About.css"
+import "./About.css"
 
 const About = () => {
   const [collapseArray, setCollapseArray] = useState([

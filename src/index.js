@@ -8,10 +8,10 @@ import {
   Routes
 } from "react-router-dom";
 import MainLayout from "../src/MainLayout";
-import Home from "./page/home/Home";
-import About from "./page/about/About";
-import Location from "./page/location/Location";
-import InvalidRoute from "./component/invalidroute/InvalidRoute";
+import Home from "./page/Home/Home";
+import About from "./page/About/About";
+import Location from "./page/Location/Location";
+import InvalidRoute from "./component/Invalidroute/InvalidRoute";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

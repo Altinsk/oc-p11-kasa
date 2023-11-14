@@ -1,7 +1,7 @@
 import React from "react";
 import cardArray from "../../data/data.json";
 import { useNavigate } from "react-router";
-import "../thumblist/ThumbList.css"
+import "./ThumbList.css"
 
 const ThumbList = () => {
   const navigate = useNavigate();

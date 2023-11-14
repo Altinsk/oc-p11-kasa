@@ -1,6 +1,6 @@
 import React from "react";
-import ThumbList from "../../component/thumblist/ThumbList";
-import ImageBackground from "../../component/imagebackground/ImageBackground"
+import ThumbList from "../../component/Thumblist/ThumbList";
+import ImageBackground from "../../component/Imagebackground/ImageBackground"
 import backImg from "../../assets/backImg.png"
 
 

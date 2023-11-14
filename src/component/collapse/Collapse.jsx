@@ -1,6 +1,6 @@
 import React from "react";
 import { HiChevronUp, HiChevronDown } from "react-icons/hi";
-import "../../component/collapse/Collapse.css"
+import "../../component/Collapse/Collapse.css"
 
 const Collapse = ({data, handleClick}) => {
     const {id, title, content, equipments, visible } = {...data};
