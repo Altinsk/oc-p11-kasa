@@ -6,7 +6,7 @@
 .panel {
   background-color: #F6F6F6;
   overflow: hidden;
-  margin-top: -5px;
+  border-radius: 0px 0px 5px 5px;
 }
 
 .container {

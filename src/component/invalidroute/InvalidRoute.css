@@ -6,7 +6,7 @@
 
 .errorDescription {
   font-size: 30px;
-  background: #FF6060;
+  color: #FF6060;
   text-align: center;
 } 
 
@@ -20,7 +20,7 @@
 
 .returnButton {
   text-decoration: underline;
-  color: #e86a6a;
+  color: #FF6060;
 }
 
   
