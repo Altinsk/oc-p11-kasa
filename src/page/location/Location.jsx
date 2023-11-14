@@ -84,7 +84,7 @@ const Location = () => {
         <div className="mainItemLeft">
           <h4
             style={{
-              color: "#e86a6a",
+              color: "#FF6060",
               margin: "0px",
               fontSize: "25px",
               fontWeight: "bold",
@@ -92,7 +92,7 @@ const Location = () => {
           >
             {title}
           </h4>
-          <p style={{ color: "#e86a6a", fontSize: "20px", margin: "0px" }}>
+          <p style={{ color: "#FF6060", fontSize: "20px", margin: "0px" }}>
             {location}
           </p>
           <ul>
@@ -119,10 +119,10 @@ const Location = () => {
                 const tempRating = ~~rating;
                 if (tempRating < item) {
                   return (
-                    <AiOutlineStar className="outLineStar"  key={index} size={35} color="#e86a6a" />
+                    <AiOutlineStar className="outLineStar"  key={index} size={35} color="#FF6060" />
                   );
                 }
-                return <AiFillStar className="outLineStar" key={index} size={35} color="#e86a6a" />;
+                return <AiFillStar className="outLineStar" key={index} size={35} color="#FF6060" />;
               })}
             </div>
           </div>

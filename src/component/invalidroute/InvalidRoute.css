@@ -1,12 +1,12 @@
 .errorText {
     font-size: 160px;
-    color: #e86a6a;
+    background: #FF6060;
     text-align: center;
   }
 
 .errorDescription {
   font-size: 30px;
-  color: #e86a6a;
+  background: #FF6060;
   text-align: center;
 } 
 
