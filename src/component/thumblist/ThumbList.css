@@ -23,18 +23,6 @@ cursor: pointer;
   border-radius: 10px;
 }
 
-.text {
-  color: rgb(215, 213, 213);
-  font-size: 60px;
-  padding-top: 30px;
-  width: 100%;
-  text-align: center;
-  position: relative;
-  margin-top: -230px;
-  text-shadow: 5px 5px 3040px #2a2828;
-}
-
-
 /*Media @Mobile screens */
 @media screen and (max-width: 500px) {
   .global-container {
