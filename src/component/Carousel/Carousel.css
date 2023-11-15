@@ -20,6 +20,15 @@
   font-size: 75px;
 }
 
+.middleCenter-carousel {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  color: #ffffff;
+}
+
 .centerRight-carousel {
   position: absolute;
   top: 50%;

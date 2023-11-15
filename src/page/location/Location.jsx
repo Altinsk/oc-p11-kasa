@@ -4,11 +4,12 @@ import Collapse from "../../component/Collapse/Collapse";
 import { AiFillStar } from "react-icons/ai";
 import { useParams } from "react-router";
 import cardArray from "../../data/data.json";
-import "./Location.css"
+import "../Location/Location.css"
+import InvalidRoute from "../../component/Invalidroute/InvalidRoute";
 
 const Location = () => {
   const { id } = useParams();
-  const iterator = cardArray?.find((card) => card?.id === id) || cardArray[0];
+  const iterator = cardArray?.find((card) => card?.id === id);
   const {
     title,
     description,
@@ -55,12 +56,6 @@ const Location = () => {
     else setPicIndex((prevState) => prevState + 1);
   };
 
-  /*const pictureCounter = () => {
-    const pictureNumber = picIndex + 1;
-    const totalPictures = pictures.length;
-    const counter = toString(pictureNumber) / toString(totalPictures);
-    return counter;
-  }*/
 
   const [pictureNumber, setPictureNumber] = useState(1);
 
@@ -68,12 +63,13 @@ const Location = () => {
        setPictureNumber(pictureNumber + 1);
   };
 
-  if (!iterator) return <>No data</>;
+  if (!iterator) return <InvalidRoute />;
   
   return (
     <>
       <Carousel
         imgSrc={pictures[picIndex]}
+        displayImageNumber = {`${picIndex + 1}/${pictures?.length}`}
         handleLeft={handleLeftClick}
         handleRight={handleRightClick}
         picCounter = {pictureCounter}

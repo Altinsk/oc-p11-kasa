@@ -7,7 +7,7 @@ const Carousel = ({
   content,
   handleLeft,
   handleRight, 
-  picCounter
+  displayImageNumber
   }) => {
   return (
     <>
@@ -20,9 +20,9 @@ const Carousel = ({
 
       <img src={imgSrc} alt="Description" className="img-bg-carousel" />
       
-      {picCounter && (
-        <div className="pic-counter-carousel">
-            <p>{picCounter}</p>
+      {displayImageNumber && (
+        <div className="middleCenter-carousel">
+            <p>{displayImageNumber}</p>
         </div>
         )}
 

@@ -1,7 +1,7 @@
 .errorText {
     font-size: 160px;
-    background: #FF6060;
     text-align: center;
+    color: #FF6060;
   }
 
 .errorDescription {
