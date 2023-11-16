@@ -107,9 +107,7 @@ li {
   .grid-item-start {
     width: auto;
   }
-  .outLineStar {
-    size: 30;
-  }
+  
   .mainItemRight {
     display: flex;
     justify-content: space-between;
