@@ -1,0 +1,29 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 60px;
+  }
+  
+  .logo img {
+    height: 50px;
+    cursor: pointer;
+  }
+  
+  .links .link {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #FF6060;
+  }
+
+  /*Media @Mobile screens */
+  @media screen and (max-width: 500px) {
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 10px;
+    }
+    .links .link {
+      margin-right: 10px;
+    }
+  }

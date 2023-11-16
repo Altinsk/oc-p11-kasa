@@ -1,0 +1,20 @@
+.active,
+.collapse :hover {
+  background-color: #f39393;
+}
+
+.panel {
+  background-color: #F6F6F6;
+  overflow: hidden;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.container {
+  padding: 20px 70px;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 0;
+  }
+}

@@ -1,0 +1,142 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 20px 70px;
+  }
+  
+  .item {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: right;
+  }
+  
+  /* Two columns on larger screens */
+  @media screen and (min-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  .grid-item-start {
+    padding: 5px;
+    width: 100%;
+    text-align: start;
+  }
+  .grid-item-end {
+    /* background-color: #ddd; */
+    padding: 5px;
+    text-align: end;
+  }
+  
+  .border {
+    border-radius: 80px;
+    background-color: gray;
+    border: 1px;
+    width: 80px;
+    height: 80px;
+    float: right;
+    margin-top: -70px;
+  }
+  
+  .text3 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    color: #FF6060;
+    font-size: 25px;
+    z-index: -1;
+    text-align: end;
+  }
+  
+  .mainItemLeft {
+    width: 100%;
+    float: left;
+    padding: 15px;
+  }
+  
+  .mainItemRight {
+    width: 100%;
+    float: right; 
+    padding: 10px;
+    height: 130px;
+    text-align: end;
+    justify-content: end;
+  }
+  
+  ul {
+    padding-left: 0px;
+    position: absolute;
+    z-index: -1;
+    margin-top: 20px;
+  }
+  
+  li {
+    display: inline;
+    text-align: center;
+    font-size: 20px;
+    background-color: #FF6060;
+    padding: 3px 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+    margin: 4px;
+  }
+
+  .lable {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    margin-bottom: 50px;
+}
+
+.stars {
+  margin-top: -45px;
+  margin-left: -110px;
+}
+  
+
+  /*Media @Mobile screens */
+  @media screen and (max-width: 500px) {
+    .img-bg {
+      height: 100px;
+      object-fit: cover;
+    }
+    .grid-container {
+      padding: 5px 10px;
+    }
+    .grid-item-start {
+      width: auto;
+    }
+    .outLineStar {
+      size: 30;
+    }
+    .mainItemRight {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row-reverse;
+      padding: 0;
+      margin-top: 30px;
+    }
+    .mainItemLeft {
+      padding: 0;
+    }
+    .border {
+      border-radius: 80px;
+      width: 40px;
+      height: 40px;
+    }
+    .text3 {
+      font-size: 15px;
+    }
+    .stars {
+      margin-left: 0;
+    }
+    .mainItemLeftList {
+      font-size: 15px;
+    }
+ 
+  }
+  
+

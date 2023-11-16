@@ -1,0 +1,26 @@
+.errorText {
+    font-size: 160px;
+    text-align: center;
+    color: #FF6060;
+  }
+
+.errorDescription {
+  font-size: 30px;
+  color: #FF6060;
+  text-align: center;
+} 
+
+.invalid-container-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.returnButton {
+  text-decoration: underline;
+  color: #FF6060;
+}
+
+  

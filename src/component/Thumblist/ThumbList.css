@@ -1,0 +1,41 @@
+.global-container {
+  padding: 0 70px;
+}
+
+.flex-container {
+  margin-top: 150px;
+  background-color: rgb(251, 248, 244);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+.flex-item {
+  padding: 20px;
+}
+
+.flex-item :hover {
+cursor: pointer;
+}
+
+.grid-img {
+  border-radius: 10px;
+}
+
+/*Media @Mobile screens */
+@media screen and (max-width: 500px) {
+  .global-container {
+    padding: 0;
+  }
+  .flex-container {
+    background-color: #ffffff;
+    margin-top: 50px;
+  }
+  .outLineStar {
+    height: 30px;
+  }
+  .flex-container {
+    padding: 0;
+  }
+}
