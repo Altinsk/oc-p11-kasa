@@ -39,8 +39,6 @@ const Carousel = ({
         <div className="text-content-carousel">{content}</div>
       </div>
     )}
-
-
   </>
   );
 };

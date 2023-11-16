@@ -26,9 +26,9 @@ const ThumbList = () => {
               className="grid-img"
             />
 
-            <div style={{ marginTop: -60, padding: 5 }}>
+            <div style={{ marginTop: -60, padding: 5}}>
               {iterator?.location?.split("-").map((name, i) => {
-                return <div key={i} style={{ color: "#ffffff"}}>{name}</div>;
+                return <div className="location-titles" key={i} style={{ color: "#ffffff"}}>{name}</div>;
               })}
             </div>
           </div>
