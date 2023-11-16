@@ -13,6 +13,10 @@
   padding: 20px 70px;
 }
 
+.panel p {
+  padding: 5px;
+}
+
 @media screen and (max-width: 500px) {
   .container {
     padding: 0;
