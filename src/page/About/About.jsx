@@ -44,7 +44,6 @@ const About = () => {
       }
       return item;
     });
-
     setCollapseArray(modifiedArray);
   };
 

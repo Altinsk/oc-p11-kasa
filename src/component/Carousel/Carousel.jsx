@@ -17,9 +17,7 @@ const Carousel = ({
           <AiOutlineLeft color="white" onClick={handleLeft} />
         </div>
       )}
-
       <img src={imgSrc} alt="Description" className="img-bg-carousel" />
-      
       {displayImageNumber && !singleImage &&(
         <div className="middleCenter-carousel">
             <p className="displayImageNumber">{displayImageNumber}</p>

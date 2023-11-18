@@ -12,12 +12,10 @@ const linkArray = [
 
 const Header = () => {
   const navigate = useNavigate();
-
   const [activeLink, setActiveLink] = useState(null);
   const handleStyle = (index) => {
       setActiveLink(index);
     }
-
   const handleLinkClick = (event, iterator) => navigate(iterator.route);
 
   return (

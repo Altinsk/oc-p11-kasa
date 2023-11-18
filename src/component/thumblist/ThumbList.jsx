@@ -25,7 +25,6 @@ const ThumbList = () => {
               style={{ backgroundSize: "cover", width: "100%", height: "100%" }}
               className="grid-img"
             />
-
             <div style={{ marginTop: -60, padding: 5}}>
               {iterator?.location?.split("-").map((name, i) => {
                 return <div className="location-titles" key={i} style={{ color: "#ffffff"}}>{name}</div>;

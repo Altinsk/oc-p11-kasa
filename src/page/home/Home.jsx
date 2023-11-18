@@ -4,7 +4,6 @@ import ImageBackground from "../../component/Imagebackground/ImageBackground"
 import backImg from "../../assets/backImg.png"
 import "../Home/Home.css"
 
-
 const Home = () => {
   return (
       <div>

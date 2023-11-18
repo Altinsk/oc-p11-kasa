@@ -50,14 +50,12 @@ const Location = () => {
     if (picIndex === 0) setPicIndex(pictures.length - 1);
     else setPicIndex((prevState) => prevState - 1);
   };
-
   const handleRightClick = () => {
     if (picIndex === pictures.length - 1) setPicIndex(0);
     else setPicIndex((prevState) => prevState + 1);
   };
 
   if (!iterator) return <InvalidRoute />;
-
   const singleImage = pictures?.length > 1 ? false : true;
   
   return (
@@ -69,8 +67,6 @@ const Location = () => {
         handleRight={handleRightClick}
         singleImage={singleImage}
       />
-
-      
        <div className="grid-container">
         <div className="mainItemLeft">
           <h4

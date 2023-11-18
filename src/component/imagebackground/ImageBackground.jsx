@@ -10,14 +10,11 @@ const ImageBackground = ({
     <div className="image-container">
       <img src={imgSrc} alt="Description" className="img-bg" />
     </div>
-
     {content && (
       <div className="text">
         <div className="text-content">{content}</div>
       </div>
     )}
-
-
   </>
   );
 };
