@@ -7,6 +7,7 @@ import Home from "./page/Home/Home";
 import About from "./page/About/About";
 import Location from "./page/Location/Location";
 import InvalidRoute from "./component/Invalidroute/InvalidRoute";
+import "./index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
