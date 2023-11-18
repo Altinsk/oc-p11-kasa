@@ -22,7 +22,7 @@ const Carousel = ({
       
       {displayImageNumber && (
         <div className="middleCenter-carousel">
-            <p>{displayImageNumber}</p>
+            <p className="displayImageNumber">{displayImageNumber}</p>
         </div>
         )}
 
@@ -34,11 +34,6 @@ const Carousel = ({
 
     </div>
 
-    {content && (
-      <div className="text">
-        <div className="text-content-carousel">{content}</div>
-      </div>
-    )}
   </>
   );
 };

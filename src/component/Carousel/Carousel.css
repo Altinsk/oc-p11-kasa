@@ -58,4 +58,7 @@
   .centerRight-carousel {
     font-size: 20px;
   }
+  .displayImageNumber {
+    display: none;
+  }
 }

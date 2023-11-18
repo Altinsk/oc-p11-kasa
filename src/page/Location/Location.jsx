@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Carousel from "../../component/Carousel/Carousel";
 import Collapse from "../../component/Collapse/Collapse";
 import { AiFillStar } from "react-icons/ai";
@@ -57,11 +57,6 @@ const Location = () => {
   };
 
 
-  const [pictureNumber, setPictureNumber] = useState(1);
-
-  const pictureCounter = () => {
-       setPictureNumber(pictureNumber + 1);
-  };
 
   if (!iterator) return <InvalidRoute />;
   
@@ -72,7 +67,6 @@ const Location = () => {
         displayImageNumber = {`${picIndex + 1}/${pictures?.length}`}
         handleLeft={handleLeftClick}
         handleRight={handleRightClick}
-        picCounter = {pictureCounter}
       />
 
       

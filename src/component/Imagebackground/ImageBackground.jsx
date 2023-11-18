@@ -1,12 +1,9 @@
 import React from "react";
 import "./ImageBackground.css"
-import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
 const ImageBackground = ({
   imgSrc,
   content,
-  handleLeft,
-  handleRight, 
   picCounter
   }) => {
   return (
