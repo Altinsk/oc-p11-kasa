@@ -4,15 +4,15 @@ import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
 const Carousel = ({
   imgSrc,
-  content,
   handleLeft,
   handleRight, 
-  displayImageNumber
+  displayImageNumber,
+  singleImage
   }) => {
   return (
     <>
     <div className="image-container-carousel">
-      {handleLeft && (
+      {handleLeft && !singleImage && (
         <div className="centerLeft-carousel">
           <AiOutlineLeft color="white" onClick={handleLeft} />
         </div>
@@ -20,20 +20,17 @@ const Carousel = ({
 
       <img src={imgSrc} alt="Description" className="img-bg-carousel" />
       
-      {displayImageNumber && (
+      {displayImageNumber && !singleImage &&(
         <div className="middleCenter-carousel">
             <p className="displayImageNumber">{displayImageNumber}</p>
         </div>
         )}
-
-      {handleRight && (
+      {handleRight && !singleImage &&(
         <div className="centerRight-carousel">
           <AiOutlineRight color="white" onClick={handleRight} />
         </div>
       )}
-
     </div>
-
   </>
   );
 };

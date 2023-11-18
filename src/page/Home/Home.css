@@ -1,0 +1,9 @@
+/*Media @Mobile screens */
+@media screen and (max-width: 500px) {
+    .container {
+      padding: 0;
+    }
+    .flex-container {
+      margin-top: 80px;
+    }
+  }

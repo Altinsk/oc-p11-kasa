@@ -98,7 +98,7 @@ li {
 /*Media @Mobile screens */
 @media screen and (max-width: 500px) {
   .img-bg {
-    height: 100px;
+    height: 208px;
     object-fit: cover;
   }
   .grid-container {

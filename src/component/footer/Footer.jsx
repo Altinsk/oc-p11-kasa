@@ -7,7 +7,7 @@ const Footer = () => {
       <div style={{ textAlign: "center" }}>
         <img src={logoWhite} alt="logoWhite" className="image1" width={100} />
       </div>
-      <div style={{ color: "white", textAlign: "center", padding: 30, fontFamily: "Montserrat"}}>
+      <div style={{ color: "white", textAlign: "center", padding: 30}}>
         <p>© 2020 Kasa. All rights reserved</p>
       </div>
     </div>

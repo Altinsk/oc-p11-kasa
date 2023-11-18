@@ -52,7 +52,7 @@ const About = () => {
     <div>
     <ImageBackground imgSrc={mountImg} />
 
-    <div className="container">
+    <div className="collapse-container">
       {collapseArray.map((iterator, index) => (
         <div key={index}>
           <br />

@@ -56,9 +56,9 @@ const Location = () => {
     else setPicIndex((prevState) => prevState + 1);
   };
 
-
-
   if (!iterator) return <InvalidRoute />;
+
+  const singleImage = pictures?.length > 1 ? false : true;
   
   return (
     <>
@@ -67,6 +67,7 @@ const Location = () => {
         displayImageNumber = {`${picIndex + 1}/${pictures?.length}`}
         handleLeft={handleLeftClick}
         handleRight={handleRightClick}
+        singleImage={singleImage}
       />
 
       

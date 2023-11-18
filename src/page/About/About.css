@@ -9,8 +9,8 @@
   border-radius: 0px 0px 5px 5px;
 }
 
-.container {
-  padding: 20px 70px;
+.collapse-container {
+  padding: 10px;
 }
 
 .panel p {
