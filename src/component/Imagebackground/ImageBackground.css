@@ -12,22 +12,6 @@
   position: relative;
 }
 
-.centerLeft {
-  position: absolute;
-  top: 50%;
-  left: 7%;
-  transform: translate(-50%, -50%);
-  font-size: 75px;
-}
-
-.centerRight {
-  position: absolute;
-  top: 50%;
-  right: 5%;
-  transform: translate(-50%, -50%);
-  font-size: 75px;
-}
-
 .container-center {
   height: 500px;
   position: relative;
